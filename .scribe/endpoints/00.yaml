@@ -1,0 +1,397 @@
+name: Endpoints
+description: ''
+endpoints:
+  -
+    httpMethods:
+      - GET
+    uri: api/v1/branches
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Display a listing of the resource.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"data":[{"id":"982b3290-4282-42e1-a756-82a44909f7e4","name":"Prof. Maci Strosin","address":"7819 Rath Cape Suite 158\nKeshaunshire, AR 42700","status":"suspended"},{"id":"982b3290-4361-4275-99a5-aed1ccb019a1","name":"Mr. Pete Nolan V","address":"76544 Cremin River\nSouth Nilsville, TN 18835-6911","status":"closed"},{"id":"982b3290-43b1-4cf7-9efd-a81ba7d09bdc","name":"Roxane Miller","address":"65575 Jared Shoals\nNorth Izaiah, NC 32443","status":"incorporation"},{"id":"982b3290-43f5-4fb0-bda1-ef22ae709d01","name":"Cindy Legros","address":"32126 Delphia Dale Suite 361\nEast Odellchester, ME 59707","status":"incorporation"},{"id":"982b3290-4444-4d51-905e-5a1803f66327","name":"Blaze Bartell","address":"2884 Roob Forge Apt. 685\nSouth Quinn, ND 89725","status":"suspended"},{"id":"982b3290-448a-435d-918a-58850c63cffb","name":"Prof. Thelma O''Kon Jr.","address":"578 Jones Junctions Apt. 364\nLake Luciuston, NE 41644-5904","status":"suspended"},{"id":"982b3290-44e2-434e-854f-cd001df34abf","name":"Jerrell Veum III","address":"5921 Jeramy Parks\nGerlachfurt, PA 08229-0954","status":"closed"},{"id":"982b3290-4522-4ec2-abb5-73cb63143903","name":"Prof. Skye Bauch","address":"322 Althea Locks\nWest Dallinfurt, ID 72384","status":"closed"}],"links":{"first":"http:\/\/inhousecake.co\/api\/v1\/branches?page=1","last":"http:\/\/inhousecake.co\/api\/v1\/branches?page=1","prev":null,"next":null},"meta":{"current_page":1,"from":1,"last_page":1,"links":[{"url":null,"label":"&laquo; Previous","active":false},{"url":"http:\/\/inhousecake.co\/api\/v1\/branches?page=1","label":"1","active":true},{"url":null,"label":"Next &raquo;","active":false}],"path":"http:\/\/inhousecake.co\/api\/v1\/branches","per_page":15,"to":8,"total":8}}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '59'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/v1/branches
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Store a newly created resource in storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/v1/branches/{id}'
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Display the specified resource.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the branch.'
+        required: true
+        example: 982b3290-4282-42e1-a756-82a44909f7e4
+        type: string
+        custom: []
+    cleanUrlParameters:
+      id: 982b3290-4282-42e1-a756-82a44909f7e4
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"data":{"id":"982b3290-4282-42e1-a756-82a44909f7e4","name":"Prof. Maci Strosin","address":"7819 Rath Cape Suite 158\nKeshaunshire, AR 42700","status":"suspended"}}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '58'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/v1/branches/{id}'
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Update the specified resource in storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the branch.'
+        required: true
+        example: 982b3290-4282-42e1-a756-82a44909f7e4
+        type: string
+        custom: []
+    cleanUrlParameters:
+      id: 982b3290-4282-42e1-a756-82a44909f7e4
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/v1/branches/{id}'
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Remove the specified resource from storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the branch.'
+        required: true
+        example: 982b3290-4282-42e1-a756-82a44909f7e4
+        type: string
+        custom: []
+    cleanUrlParameters:
+      id: 982b3290-4282-42e1-a756-82a44909f7e4
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/v1/categories
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Display a listing of the resource.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"data":[{"id":"982b3290-3b17-40c2-992d-3ec31475acc5","name":"Kathlyn Hermann","status":"inactive"},{"id":"982b3290-3dc2-41dd-8428-479a23a4ad50","name":"Prof. Davion Goyette","status":"inactive"},{"id":"982b3290-3e13-47cb-9298-7d73171d2182","name":"Edmond Larson","status":"active"},{"id":"982b3290-3e6c-49e0-96b8-15391774ae09","name":"Miss Gracie Rippin IV","status":"active"},{"id":"982b3290-3eb5-4d6c-800a-346596bafdc2","name":"Ms. Elta Ullrich II","status":"active"},{"id":"982b3290-3efc-4371-a9ef-59c371f232f4","name":"Emory Barton","status":"active"},{"id":"982b3290-3f42-4bed-8710-81d82959eadf","name":"Emely Grant","status":"active"},{"id":"982b3290-3f87-4c90-ad3e-e52dfbcf68a4","name":"Riley Stark Jr.","status":"stopped"},{"id":"982b3290-3fe6-443b-a464-28295302bd2c","name":"Maeve Nitzsche Jr.","status":"active"},{"id":"982b3290-402a-462f-a224-800e88a30a09","name":"Courtney Gaylord","status":"stopped"},{"id":"982b3290-4066-4107-b27e-110ed654f4f4","name":"Kaycee Ebert","status":"inactive"},{"id":"982b3290-40a4-4437-bf9d-0a3c1db878af","name":"Dr. Eden Gerlach","status":"active"}],"links":{"first":"http:\/\/inhousecake.co\/api\/v1\/categories?page=1","last":"http:\/\/inhousecake.co\/api\/v1\/categories?page=1","prev":null,"next":null},"meta":{"current_page":1,"from":1,"last_page":1,"links":[{"url":null,"label":"&laquo; Previous","active":false},{"url":"http:\/\/inhousecake.co\/api\/v1\/categories?page=1","label":"1","active":true},{"url":null,"label":"Next &raquo;","active":false}],"path":"http:\/\/inhousecake.co\/api\/v1\/categories","per_page":15,"to":12,"total":12}}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '57'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/v1/categories
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Store a newly created resource in storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/v1/categories/{id}'
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Display the specified resource.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the category.'
+        required: true
+        example: 982b3290-3b17-40c2-992d-3ec31475acc5
+        type: string
+        custom: []
+    cleanUrlParameters:
+      id: 982b3290-3b17-40c2-992d-3ec31475acc5
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"data":{"id":"982b3290-3b17-40c2-992d-3ec31475acc5","name":"Kathlyn Hermann","status":"inactive"}}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '56'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/v1/categories/{id}'
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Update the specified resource in storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the category.'
+        required: true
+        example: 982b3290-3b17-40c2-992d-3ec31475acc5
+        type: string
+        custom: []
+    cleanUrlParameters:
+      id: 982b3290-3b17-40c2-992d-3ec31475acc5
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/v1/categories/{id}'
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Remove the specified resource from storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the category.'
+        required: true
+        example: 982b3290-3b17-40c2-992d-3ec31475acc5
+        type: string
+        custom: []
+    cleanUrlParameters:
+      id: 982b3290-3b17-40c2-992d-3ec31475acc5
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
